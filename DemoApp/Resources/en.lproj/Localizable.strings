@@ -20,4 +20,8 @@
 "LABEL_ERROR" = "Error";
 "LABEL_SUCCESS" = "Success";
 
+"UNKNOWN_ERROR" = "Something went wrong, please try again";
 
+"ALERT_MESSAGE_INVALID_PASSWORD" = "Please enter password between 5 to 30 char long";
+"ALERT_MESSAGE_INVALID_EMAIL" = "Please enter valid email-id";
+"ALERT_MESSAGE_BLANK_FIELD_LOGIN" = "Please enter valid email-id and password";

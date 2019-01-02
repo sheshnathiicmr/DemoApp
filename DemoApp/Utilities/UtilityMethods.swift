@@ -30,7 +30,7 @@ class UtilityMethods: NSObject {
     }
     
     func showBanner(withMessage message:String) -> Void {
-        let banner = Banner(title: message, subtitle: nil, image: nil, backgroundColor: UIColor.blue)
+        let banner = Banner(title: message, subtitle: nil, image: nil, backgroundColor: UIColor.lightGray)
         banner.dismissesOnTap = true
         banner.titleLabel.textColor = UIColor.white
         banner.titleLabel.textAlignment = .center
@@ -57,6 +57,17 @@ class UtilityMethods: NSObject {
         return Bundle.main.infoDictionary!["CFBundleVersion"] as! String
     }
     
+    func isValidEmailId(_ emailId:String) -> Bool {
+        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", Constants.kEMAIL_VALIDATION_REGULAR_EXPRESSION)
+        return emailPredicate.evaluate(with: emailId)
+    }
+    
+    func isValidPassword(_ password:String) -> Bool {
+        if password.count >= 5 && password.count <= 30 {
+            return true
+        }
+        return false
+    }
     
 }
 

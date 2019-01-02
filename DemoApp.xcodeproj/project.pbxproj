@@ -25,6 +25,9 @@
 		2B40975A21DCBD3500352D78 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40975921DCBD3500352D78 /* UIView.swift */; };
 		2B40975D21DCC0FA00352D78 /* BrandingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40975C21DCC0FA00352D78 /* BrandingButton.swift */; };
 		2B40976021DCC5E700352D78 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B40976221DCC5E700352D78 /* Localizable.strings */; };
+		2B40976421DCC9D800352D78 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40976321DCC9D800352D78 /* LoginViewModel.swift */; };
+		2B40976721DCCE8900352D78 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40976621DCCE8900352D78 /* CustomError.swift */; };
+		2B40976B21DCD9ED00352D78 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40976A21DCD9ED00352D78 /* SignUpViewController.swift */; };
 		4C1F4D5FE1D7BB16874B51D0 /* Pods_CommonPod_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		2B40975921DCBD3500352D78 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		2B40975C21DCC0FA00352D78 /* BrandingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandingButton.swift; sourceTree = "<group>"; };
 		2B40976121DCC5E700352D78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2B40976321DCC9D800352D78 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2B40976621DCCE8900352D78 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		2B40976A21DCD9ED00352D78 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A7F523E7A21876C75465BC10 /* Pods-CommonPod-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB8E9BEDB154CFC8FB88AFFC /* Pods-CommonPod-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPod_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +123,7 @@
 		2B40973A21DC985900352D78 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2B40976321DCC9D800352D78 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -132,8 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				2B40974121DC9D1800352D78 /* BaseViewController.swift */,
-				2B40973F21DC9CCE00352D78 /* LoginViewController.swift */,
 				2B40975621DCBB9600352D78 /* ItemListViewController.swift */,
+				2B40973F21DC9CCE00352D78 /* LoginViewController.swift */,
+				2B40976A21DCD9ED00352D78 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				2B40974F21DCA01200352D78 /* UtilityMethods.swift */,
 				2B40974721DC9E9900352D78 /* SettingsUserPreference.swift */,
 				2B40974521DC9E2300352D78 /* Constants.swift */,
+				2B40976621DCCE8900352D78 /* CustomError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -327,8 +336,11 @@
 				2B40975021DCA01200352D78 /* UtilityMethods.swift in Sources */,
 				2B40975A21DCBD3500352D78 /* UIView.swift in Sources */,
 				2B40975721DCBB9600352D78 /* ItemListViewController.swift in Sources */,
+				2B40976421DCC9D800352D78 /* LoginViewModel.swift in Sources */,
+				2B40976721DCCE8900352D78 /* CustomError.swift in Sources */,
 				2B40975D21DCC0FA00352D78 /* BrandingButton.swift in Sources */,
 				2B40974221DC9D1800352D78 /* BaseViewController.swift in Sources */,
+				2B40976B21DCD9ED00352D78 /* SignUpViewController.swift in Sources */,
 				2B40974E21DC9FC500352D78 /* UIColor.swift in Sources */,
 				2B40974A21DC9F1900352D78 /* UIButton.swift in Sources */,
 				2B40974021DC9CCE00352D78 /* LoginViewController.swift in Sources */,
