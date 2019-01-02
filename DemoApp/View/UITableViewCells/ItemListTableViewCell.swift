@@ -23,9 +23,9 @@ class ItemListTableViewCell: UITableViewCell {
                 
                 //set updated on
                 if let dateUpdatedOn = item.updatedAt {
-                    self.lableUpdatedOn.text = String(format: "UPDATED_ON", dateUpdatedOn.toString())
+                    self.lableUpdatedOn.text = String(format: "UPDATED_ON".localized, dateUpdatedOn.toString())
                 }else{
-                    self.lableUpdatedOn.text = String(format: "UPDATED_ON", "NA")
+                    self.lableUpdatedOn.text = String(format: "UPDATED_ON".localized, "NA")
                 }
                 //set item image
                 if let imageData = item.itemPhoto {
@@ -35,6 +35,8 @@ class ItemListTableViewCell: UITableViewCell {
                 }
                 //set item title and description
                 self.setTitle(withTitle: item.title, description: item.description)
+                //set favorite image/state
+                self.buttonFavorite.refreshButtonImage(value: item.isItMarkedFavorite)
             }
         }
     }

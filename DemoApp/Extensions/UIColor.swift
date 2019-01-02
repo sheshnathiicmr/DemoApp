@@ -12,13 +12,12 @@ import UIKit
 extension UIColor {
     
     public class var EvenCellBackgroundColor: UIColor{
-        return UIColor(red:178/255.0, green:34/255.0 ,blue:34/255.0 , alpha:0.2)
+        return UIColor(red:239/255.0, green:239/255.0 ,blue:244/255.0 , alpha:0.5)
     }
    
     public class var OddCellBackgroundColor: UIColor{
-        return UIColor(red:178/255.0, green:34/255.0 ,blue:34/255.0 , alpha:0.1)
+        return UIColor(red:239/255.0, green:239/255.0 ,blue:244/255.0 , alpha:0.3)
     }
-    
     
     
 }

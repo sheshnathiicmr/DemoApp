@@ -26,7 +26,8 @@ class ItemListViewController: BaseViewController {
         self.title = "TITLE_ITEMS_SCREEN".localized
         self.tableViewItemList.rowHeight = UITableView.automaticDimension
         self.tableViewItemList.estimatedRowHeight = 60
-        
+        self.tableViewItemList.tableFooterView = UIView()
+
     }
     
 }
@@ -37,12 +38,12 @@ extension ItemListViewController: UITableViewDelegate, UITableViewDataSource {
         return  viewModel.getNumberOfItems()
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let itemCell:ItemListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ItemListTableViewCell") as! ItemListTableViewCell
-        /*if let message = self.viewModel.getMessage(atIndexPath: indexPath) {
-            messageCell.message = message
+        if let item = self.viewModel.getItem(forIndexPath: indexPath) {
+            itemCell.item = item
         }
-        self.syncMessagesAckStatusForVisibeCells()*/
         itemCell.setColorPatter(withIndexPath: indexPath)
         itemCell.selectionStyle = .none
         return itemCell

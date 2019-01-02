@@ -46,6 +46,13 @@ class ItemListViewModel: NSObject {
         return items.count
     }
     
+    public func getItem(forIndexPath:IndexPath) -> Item? {
+        guard let items = self.itemList else {
+            return nil
+        }
+        return items[forIndexPath.row]
+    }
+    
     
     // MARK: - UtilityMethods
     private func parseAndSaveItems(withJSON:[String:Any]) -> Void {
@@ -67,6 +74,10 @@ class ItemListViewModel: NSObject {
                     if let itemUpdatedAt = item["updatedAt"] as? String {
                         newItem.updatedAt = self.getDate(withStringDate: itemUpdatedAt)
                     }
+                    if let isItFavorite = item["isItFavorite"] as? Bool {
+                        newItem.isItMarkedFavorite = isItFavorite
+                    }
+                    
                 }
                 try realm.commitWrite()
                 DispatchQueue.main.async {

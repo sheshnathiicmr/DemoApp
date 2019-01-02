@@ -2,9 +2,9 @@
 {
     "items":[
     
-    {"title":"item1", "description":"product description","imageName":"image1","updatedAt":"2-jan-2019"},
+    {"title":"item1", "description":"product description","imageName":"image1","updatedAt":"2-jan-2019","isItFavorite":false},
     
-    {"title":"item2", "description":"product description","imageName":"image2","updatedAt":"1-feb-2019"}
+    {"title":"item2", "description":"product description","imageName":"image2","updatedAt":"1-feb-2019","isItFavorite":true}
     
     ]
 
