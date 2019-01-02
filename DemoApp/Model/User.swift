@@ -30,4 +30,14 @@ class User : Object {
         }
     }
     
+    class func isUserExists(withUserId emailId:String, password:String) -> Bool {
+        do{
+            let realm = try Realm()
+            let users =  realm.objects(User.self).filter({ $0.id == emailId &&  $0.password == password})
+            return users.count >= 1
+        }catch{
+            print("error while getting user object")
+        }
+        return false
+    }
 }

@@ -44,7 +44,13 @@ class LoginViewController: BaseViewController {
 
 extension LoginViewController:LoginViewModelDelegate {
     func onLoginSuccess(_ loginViewModel: LoginViewModel) {
-        self.performSegue(withIdentifier: "showSignup", sender: self)
+        //show home screen
+        SettingsUserPreference.shared.isUserLoggedIn = true
+        UIView.transition(with: self.view, duration: 1, options: .transitionFlipFromLeft, animations: {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let tabbarRootController = storyBoard.instantiateViewController(withIdentifier: "tabbarRootController")
+            self.present(tabbarRootController, animated: true, completion: nil)
+        }, completion: nil)
     }
     
     func onLoginFailed(_ loginViewModel: LoginViewModel, _ error: CustomError) {

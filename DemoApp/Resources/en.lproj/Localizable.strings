@@ -28,3 +28,4 @@
 
 "ALERT_MESSAGE_SIGNUP_SUCCESS" = "Congrats, your account is created with us 😃";
 "ALERT_MESSAGE_SIGNUP_FAILED" = "Account couldn't be created, please try again";
+"ALERT_MESSAGE_WRONG_CREDENTIALS" = "Email-id or password don't matched with our records";
