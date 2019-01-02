@@ -45,7 +45,6 @@ class LoginViewController: BaseViewController {
 extension LoginViewController:LoginViewModelDelegate {
     func onLoginSuccess(_ loginViewModel: LoginViewModel) {
         //show home screen
-        SettingsUserPreference.shared.isUserLoggedIn = true
         UIView.transition(with: self.view, duration: 1, options: .transitionFlipFromLeft, animations: {
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             let tabbarRootController = storyBoard.instantiateViewController(withIdentifier: "tabbarRootController")

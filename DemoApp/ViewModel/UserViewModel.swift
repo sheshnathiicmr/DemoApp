@@ -10,7 +10,7 @@ import UIKit
 
 
 protocol UserViewModelDelegate {
-    func onUserDetailsRecieved(_ loginViewModel:UserViewModel)
+    func onUserDetailsRecieved(_ loginViewModel:UserViewModel,user:User)
 }
 
 
@@ -23,5 +23,15 @@ class UserViewModel: NSObject {
         self.delegate = delegate
     }
     
+    
+    public func getLoggedInUserDetails() -> Void {
+        guard let loggedInUserId = SettingsUserPreference.shared.loggedInUserId else {
+            return
+        }
+        guard let user = User.getUser(withUserId: loggedInUserId) else {
+            return
+        }
+        self.delegate?.onUserDetailsRecieved(self, user: user)
+    }
 }
 

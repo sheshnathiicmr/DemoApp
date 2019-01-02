@@ -40,4 +40,15 @@ class User : Object {
         }
         return false
     }
+    
+    class func getUser(withUserId emailId:String) -> User? {
+        do{
+            let realm = try Realm()
+            let users =  realm.objects(User.self).filter({ $0.id == emailId})
+            return users.first
+        }catch{
+            print("error while getting user object")
+        }
+        return nil
+    }
 }

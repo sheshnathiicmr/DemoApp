@@ -22,11 +22,13 @@ class UtilityMethods: NSObject {
     
     override private init() {
         //init
-        
     }
     
     func isUserLoggedIn() -> Bool {
-        return SettingsUserPreference.shared.isUserLoggedIn
+        guard let _ = SettingsUserPreference.shared.loggedInUserId else {
+            return false
+        }
+        return true
     }
     
     func showBanner(withMessage message:String) -> Void {

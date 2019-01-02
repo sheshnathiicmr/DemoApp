@@ -25,6 +25,7 @@ class LoginViewModel: NSObject {
         if UtilityMethods.shared.isValidEmailId(emailId) {
             if UtilityMethods.shared.isValidPassword(password) {
                 if User.isUserExists(withUserId: emailId, password: password) {
+                    SettingsUserPreference.shared.loggedInUserId = emailId
                     self.delegate?.onLoginSuccess(self)//id and password is valid
                 }else{
                     let errorPassword = CustomError(title: "ALERT_MESSAGE_WRONG_CREDENTIALS".localized, description: "", code: ErrorCodes.invalidUserId)

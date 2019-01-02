@@ -14,12 +14,14 @@ class SettingsUserPreference: NSObject {
     override private init() {
     }
     
-    var isUserLoggedIn:Bool {
-        set {   UserDefaults.standard.set(newValue, forKey: Constants.kIS_USER_LOGGED_IN)
+    
+    var loggedInUserId:String? {
+        set {   UserDefaults.standard.set(newValue, forKey: Constants.kLOGGED_IN_USER_ID)
             UserDefaults.standard.synchronize()
         }
-        get { return UserDefaults.standard.bool(forKey: Constants.kIS_USER_LOGGED_IN)
+        get { return UserDefaults.standard.object(forKey: Constants.kLOGGED_IN_USER_ID) as? String
         }
     }
+    
     
 }
