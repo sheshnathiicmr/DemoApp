@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-dE-0hX">
                                 <rect key="frame" x="37.5" y="123.5" width="300" height="420"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kRI-qC-hpx">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kRI-qC-hpx">
                                         <rect key="frame" x="126" y="32" width="48" height="48.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="48" id="9WB-hb-6eI"/>
@@ -115,7 +115,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQo-dU-dgc">
                                 <rect key="frame" x="37.5" y="123.5" width="300" height="420"/>
                                 <subviews>
-                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="WfZ-Mh-L6y">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="WfZ-Mh-L6y">
                                         <rect key="frame" x="120" y="8" width="60" height="61"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -224,7 +224,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="app_logo" width="30" height="30"/>
-        <image name="user" width="50" height="50"/>
+        <image name="AppLogo" width="30" height="30"/>
+        <image name="User" width="50" height="50"/>
     </resources>
 </document>

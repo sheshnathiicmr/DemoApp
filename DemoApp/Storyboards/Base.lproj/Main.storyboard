@@ -10,21 +10,53 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--User-->
         <scene sceneID="Zlu-zp-MYd">
             <objects>
-                <viewController storyboardIdentifier="ItemListViewController" id="hAI-e8-1tG" customClass="ItemListViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserViewController" id="hAI-e8-1tG" customClass="UserViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ue-5L-KIf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K1A-Kg-HJm"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="bta-a6-MTk"/>
+                    <tabBarItem key="tabBarItem" title="User" image="UserTabbarIcon" id="bta-a6-MTk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPM-x2-Z5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245.59999999999999" y="-34.632683658170919"/>
+            <point key="canvasLocation" x="297" y="-50"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="37b-oR-H3o">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteViewController" id="5BX-hZ-zgw" customClass="FavoriteViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uTx-sL-ARu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lV8-GC-G1l"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="StarTabbarIcon" id="DpW-RW-7ic"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqu-A1-SPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="1331"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="TlU-Lo-t5e">
+            <objects>
+                <viewController storyboardIdentifier="ItemListViewController" id="uRf-6Y-TaH" customClass="ItemListViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kpy-Xv-Jf5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QSt-tj-VbC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="ItemListTabbarIcon" id="H3p-mv-KgU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLp-RB-AL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="297" y="636"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ka4-ZD-Xrk">
@@ -37,11 +69,18 @@
                     </tabBar>
                     <connections>
                         <segue destination="hAI-e8-1tG" kind="relationship" relationship="viewControllers" id="jL3-E6-Bj4"/>
+                        <segue destination="uRf-6Y-TaH" kind="relationship" relationship="viewControllers" id="f5e-Hc-1hq"/>
+                        <segue destination="5BX-hZ-zgw" kind="relationship" relationship="viewControllers" id="OaM-2V-kmU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsR-bc-R5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-693.60000000000002" y="-34.632683658170919"/>
+            <point key="canvasLocation" x="-767" y="843"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ItemListTabbarIcon" width="22" height="22"/>
+        <image name="StarTabbarIcon" width="22" height="22"/>
+        <image name="UserTabbarIcon" width="22" height="22"/>
+    </resources>
 </document>
