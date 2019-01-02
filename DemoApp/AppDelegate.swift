@@ -8,6 +8,8 @@
 
 import UIKit
 
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        //check if user is logged in
+        if UtilityMethods.shared.isUserLoggedIn() == false{
+            //show onboarding screen
+            if let loginViewController = UIStoryboard(name: "OnBoarding", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+                appDelegate.window?.rootViewController = loginViewController
+            }
+            
+            
+        }
         return true
     }
 

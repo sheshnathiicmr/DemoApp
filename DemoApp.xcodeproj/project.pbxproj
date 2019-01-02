@@ -90,7 +90,6 @@
 				2B40973D21DC988F00352D78 /* Resources */,
 				2B40973921DC984100352D78 /* ThirdPartyCode */,
 				2B40972421DC96F100352D78 /* AppDelegate.swift */,
-				2B40972821DC96F100352D78 /* Main.storyboard */,
 				2B40972B21DC96F300352D78 /* Assets.xcassets */,
 				2B40972D21DC96F300352D78 /* LaunchScreen.storyboard */,
 				2B40973021DC96F300352D78 /* Info.plist */,
@@ -159,6 +158,7 @@
 		2B40975121DCA1CE00352D78 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				2B40972821DC96F100352D78 /* Main.storyboard */,
 				2B40975221DCA1F100352D78 /* OnBoarding.storyboard */,
 			);
 			path = Storyboards;

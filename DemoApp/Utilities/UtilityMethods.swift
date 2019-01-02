@@ -25,6 +25,9 @@ class UtilityMethods: NSObject {
         
     }
     
+    func isUserLoggedIn() -> Bool {
+        return SettingsUserPreference.shared.isUserLoggedIn
+    }
     
     func showBanner(withMessage message:String) -> Void {
         let banner = Banner(title: message, subtitle: nil, image: nil, backgroundColor: UIColor.blue)
