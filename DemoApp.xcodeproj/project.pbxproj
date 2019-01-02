@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		2B15DBAF21DD0B3D009195EE /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DBAE21DD0B3D009195EE /* UserViewModel.swift */; };
 		2B15DBB121DD0E34009195EE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DBB021DD0E34009195EE /* UIImageView.swift */; };
+		2B15DBB321DD13C3009195EE /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DBB221DD13C3009195EE /* ItemListViewModel.swift */; };
+		2B15DBB721DD1510009195EE /* ItemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DBB621DD1510009195EE /* ItemListTableViewCell.swift */; };
+		2B15DBB921DD1569009195EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DBB821DD1569009195EE /* Item.swift */; };
+		2B15DBBB21DD177E009195EE /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = 2B15DBBA21DD177E009195EE /* items.json */; };
+		2B15DBBE21DD288F009195EE /* StarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DBBD21DD288F009195EE /* StarButton.swift */; };
+		2B15DBC021DD2E2C009195EE /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DBBF21DD2E2C009195EE /* Date.swift */; };
 		2B40972521DC96F100352D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40972421DC96F100352D78 /* AppDelegate.swift */; };
 		2B40972A21DC96F100352D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B40972821DC96F100352D78 /* Main.storyboard */; };
 		2B40972C21DC96F300352D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B40972B21DC96F300352D78 /* Assets.xcassets */; };
@@ -40,6 +46,12 @@
 /* Begin PBXFileReference section */
 		2B15DBAE21DD0B3D009195EE /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2B15DBB021DD0E34009195EE /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		2B15DBB221DD13C3009195EE /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
+		2B15DBB621DD1510009195EE /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
+		2B15DBB821DD1569009195EE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		2B15DBBA21DD177E009195EE /* items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+		2B15DBBD21DD288F009195EE /* StarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarButton.swift; sourceTree = "<group>"; };
+		2B15DBBF21DD2E2C009195EE /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		2B40972121DC96F100352D78 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B40972421DC96F100352D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B40972921DC96F100352D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +97,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B15DBB421DD14E4009195EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B15DBB521DD14EE009195EE /* UITableViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B15DBB521DD14EE009195EE /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2B15DBB621DD1510009195EE /* ItemListTableViewCell.swift */,
+			);
+			path = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		2B15DBBC21DD208D009195EE /* ItemsImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemsImages;
+			sourceTree = "<group>";
+		};
 		2B40971821DC96F100352D78 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +142,7 @@
 		2B40972321DC96F100352D78 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B15DBB421DD14E4009195EE /* View */,
 				2B40975B21DCC0D100352D78 /* CustomControls */,
 				2B40973C21DC986E00352D78 /* Controller */,
 				2B40973B21DC986500352D78 /* Model */,
@@ -138,6 +174,7 @@
 				2B40976321DCC9D800352D78 /* LoginViewModel.swift */,
 				2B40976C21DCE8CE00352D78 /* SignUpViewModel.swift */,
 				2B15DBAE21DD0B3D009195EE /* UserViewModel.swift */,
+				2B15DBB221DD13C3009195EE /* ItemListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -146,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				2B40976E21DCE98600352D78 /* User.swift */,
+				2B15DBB821DD1569009195EE /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,7 +204,9 @@
 		2B40973D21DC988F00352D78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2B15DBBC21DD208D009195EE /* ItemsImages */,
 				2B40976221DCC5E700352D78 /* Localizable.strings */,
+				2B15DBBA21DD177E009195EE /* items.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -179,6 +219,7 @@
 				2B40974D21DC9FC500352D78 /* UIColor.swift */,
 				2B40975921DCBD3500352D78 /* UIView.swift */,
 				2B15DBB021DD0E34009195EE /* UIImageView.swift */,
+				2B15DBBF21DD2E2C009195EE /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				2B40975C21DCC0FA00352D78 /* BrandingButton.swift */,
+				2B15DBBD21DD288F009195EE /* StarButton.swift */,
 			);
 			path = CustomControls;
 			sourceTree = "<group>";
@@ -290,6 +332,7 @@
 			files = (
 				2B40976021DCC5E700352D78 /* Localizable.strings in Resources */,
 				2B40972F21DC96F300352D78 /* LaunchScreen.storyboard in Resources */,
+				2B15DBBB21DD177E009195EE /* items.json in Resources */,
 				2B40972C21DC96F300352D78 /* Assets.xcassets in Resources */,
 				2B40972A21DC96F100352D78 /* Main.storyboard in Resources */,
 				2B40975321DCA1F100352D78 /* OnBoarding.storyboard in Resources */,
@@ -352,7 +395,9 @@
 				2B40976D21DCE8CE00352D78 /* SignUpViewModel.swift in Sources */,
 				2B40974621DC9E2300352D78 /* Constants.swift in Sources */,
 				2B40972521DC96F100352D78 /* AppDelegate.swift in Sources */,
+				2B15DBC021DD2E2C009195EE /* Date.swift in Sources */,
 				2B40975021DCA01200352D78 /* UtilityMethods.swift in Sources */,
+				2B15DBB921DD1569009195EE /* Item.swift in Sources */,
 				2B40975A21DCBD3500352D78 /* UIView.swift in Sources */,
 				2B15DBB121DD0E34009195EE /* UIImageView.swift in Sources */,
 				2B40975721DCBB9600352D78 /* ItemListViewController.swift in Sources */,
@@ -360,13 +405,16 @@
 				2B40976721DCCE8900352D78 /* CustomError.swift in Sources */,
 				2B40975D21DCC0FA00352D78 /* BrandingButton.swift in Sources */,
 				2B40974221DC9D1800352D78 /* BaseViewController.swift in Sources */,
+				2B15DBBE21DD288F009195EE /* StarButton.swift in Sources */,
 				2B40976B21DCD9ED00352D78 /* SignUpViewController.swift in Sources */,
 				2B40974E21DC9FC500352D78 /* UIColor.swift in Sources */,
+				2B15DBB321DD13C3009195EE /* ItemListViewModel.swift in Sources */,
 				2B40974A21DC9F1900352D78 /* UIButton.swift in Sources */,
 				2B40977321DCF7CC00352D78 /* FavoriteViewController.swift in Sources */,
 				2B40976F21DCE98600352D78 /* User.swift in Sources */,
 				2B40974021DC9CCE00352D78 /* LoginViewController.swift in Sources */,
 				2B40974C21DC9F7400352D78 /* String.swift in Sources */,
+				2B15DBB721DD1510009195EE /* ItemListTableViewCell.swift in Sources */,
 				2B40973821DC983A00352D78 /* GradientView.swift in Sources */,
 				2B15DBAF21DD0B3D009195EE /* UserViewModel.swift in Sources */,
 				2B40977121DCF79800352D78 /* UserViewController.swift in Sources */,

@@ -11,7 +11,14 @@ import UIKit
 
 extension UIColor {
     
-    public class var PulsatorBackgrounColor: UIColor{
-        return UIColor(red:210/255.0, green:231/255.0 ,blue:255/255.0 , alpha:1.0)
+    public class var EvenCellBackgroundColor: UIColor{
+        return UIColor(red:178/255.0, green:34/255.0 ,blue:34/255.0 , alpha:0.2)
     }
+   
+    public class var OddCellBackgroundColor: UIColor{
+        return UIColor(red:178/255.0, green:34/255.0 ,blue:34/255.0 , alpha:0.1)
+    }
+    
+    
+    
 }
