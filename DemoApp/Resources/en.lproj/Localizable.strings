@@ -25,3 +25,6 @@
 "ALERT_MESSAGE_INVALID_PASSWORD" = "Please enter password between 5 to 30 char long";
 "ALERT_MESSAGE_INVALID_EMAIL" = "Please enter valid email-id";
 "ALERT_MESSAGE_BLANK_FIELD_LOGIN" = "Please enter valid email-id and password";
+
+"ALERT_MESSAGE_SIGNUP_SUCCESS" = "Congrats, your account is created with us 😃";
+"ALERT_MESSAGE_SIGNUP_FAILED" = "Account couldn't be created, please try again";

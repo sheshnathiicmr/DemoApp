@@ -37,13 +37,14 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func buttonSignupPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "showSignup", sender: self)
     }
     
 }
 
 extension LoginViewController:LoginViewModelDelegate {
     func onLoginSuccess(_ loginViewModel: LoginViewModel) {
-        
+        self.performSegue(withIdentifier: "showSignup", sender: self)
     }
     
     func onLoginFailed(_ loginViewModel: LoginViewModel, _ error: CustomError) {

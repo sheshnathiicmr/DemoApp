@@ -28,6 +28,8 @@
 		2B40976421DCC9D800352D78 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40976321DCC9D800352D78 /* LoginViewModel.swift */; };
 		2B40976721DCCE8900352D78 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40976621DCCE8900352D78 /* CustomError.swift */; };
 		2B40976B21DCD9ED00352D78 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40976A21DCD9ED00352D78 /* SignUpViewController.swift */; };
+		2B40976D21DCE8CE00352D78 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40976C21DCE8CE00352D78 /* SignUpViewModel.swift */; };
+		2B40976F21DCE98600352D78 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40976E21DCE98600352D78 /* User.swift */; };
 		4C1F4D5FE1D7BB16874B51D0 /* Pods_CommonPod_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		2B40976321DCC9D800352D78 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2B40976621DCCE8900352D78 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		2B40976A21DCD9ED00352D78 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2B40976C21DCE8CE00352D78 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		2B40976E21DCE98600352D78 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A7F523E7A21876C75465BC10 /* Pods-CommonPod-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB8E9BEDB154CFC8FB88AFFC /* Pods-CommonPod-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPod_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				2B40976321DCC9D800352D78 /* LoginViewModel.swift */,
+				2B40976C21DCE8CE00352D78 /* SignUpViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 		2B40973B21DC986500352D78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2B40976E21DCE98600352D78 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B40974821DC9E9900352D78 /* SettingsUserPreference.swift in Sources */,
+				2B40976D21DCE8CE00352D78 /* SignUpViewModel.swift in Sources */,
 				2B40974621DC9E2300352D78 /* Constants.swift in Sources */,
 				2B40972521DC96F100352D78 /* AppDelegate.swift in Sources */,
 				2B40975021DCA01200352D78 /* UtilityMethods.swift in Sources */,
@@ -343,6 +350,7 @@
 				2B40976B21DCD9ED00352D78 /* SignUpViewController.swift in Sources */,
 				2B40974E21DC9FC500352D78 /* UIColor.swift in Sources */,
 				2B40974A21DC9F1900352D78 /* UIButton.swift in Sources */,
+				2B40976F21DCE98600352D78 /* User.swift in Sources */,
 				2B40974021DC9CCE00352D78 /* LoginViewController.swift in Sources */,
 				2B40974C21DC9F7400352D78 /* String.swift in Sources */,
 				2B40973821DC983A00352D78 /* GradientView.swift in Sources */,
