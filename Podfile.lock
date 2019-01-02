@@ -1,4 +1,5 @@
 PODS:
+  - BRYXBanner (0.8.3)
   - Realm (3.11.0):
     - Realm/Headers (= 3.11.0)
   - Realm/Headers (3.11.0)
@@ -6,17 +7,20 @@ PODS:
     - Realm (= 3.11.0)
 
 DEPENDENCIES:
+  - BRYXBanner
   - RealmSwift (= 3.11.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - BRYXBanner
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
+  BRYXBanner: 8cf1b119792e1cee8d7ba107297ef89f7409bc53
   Realm: 92f09a102692b96a9a10e9617f214f15c5ab85fc
   RealmSwift: 5f0481cd658bb751c509314b964a35eaa264d2cf
 
-PODFILE CHECKSUM: 4a84aca76b0811b6581a0255dff79b9c6a0f7759
+PODFILE CHECKSUM: f3233fd8b09f65188e1efd89a23cda9bb975adda
 
 COCOAPODS: 1.5.0

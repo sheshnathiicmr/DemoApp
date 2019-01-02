@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16417227E2C43D7EDF99005D5D66D5B3"
-               BlueprintName = "RealmSwift"
+               BlueprintIdentifier = "0F3B36547C3C2CC3060475E614BCBF32"
+               BlueprintName = "BRYXBanner"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "RealmSwift.framework">
+               BuildableName = "BRYXBanner.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
