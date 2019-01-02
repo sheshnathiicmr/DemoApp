@@ -17,13 +17,76 @@
                     <view key="view" contentMode="scaleToFill" id="WwR-JH-DGd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-dE-0hX">
+                                <rect key="frame" x="37.5" y="100" width="300" height="467"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kRI-qC-hpx">
+                                        <rect key="frame" x="126" y="32" width="48" height="48.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="9WB-hb-6eI"/>
+                                            <constraint firstAttribute="width" secondItem="kRI-qC-hpx" secondAttribute="height" multiplier="72:73" id="qvR-iJ-Kfa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oky-VE-2mO" customClass="BrandingButton" customModule="DemoApp" customModuleProvider="target">
+                                        <rect key="frame" x="69.5" y="268.5" width="161" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="ESu-RO-SWT"/>
+                                            <constraint firstAttribute="width" secondItem="Oky-VE-2mO" secondAttribute="height" multiplier="161:47" id="w9f-oD-Dnk"/>
+                                        </constraints>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="kRI-qC-hpx" firstAttribute="top" secondItem="Dmk-dE-0hX" secondAttribute="top" constant="32" id="2fb-Qg-ndO"/>
+                                    <constraint firstItem="kRI-qC-hpx" firstAttribute="centerX" secondItem="Dmk-dE-0hX" secondAttribute="centerX" id="Yt3-st-CXj"/>
+                                    <constraint firstItem="Oky-VE-2mO" firstAttribute="centerX" secondItem="Dmk-dE-0hX" secondAttribute="centerX" id="sOX-tr-fRb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email-id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kiv-Vg-h9z">
+                                <rect key="frame" x="67.5" y="212.5" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-nJ-EHb">
+                                <rect key="frame" x="67.5" y="274.5" width="240" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cde-nJ-EHb" firstAttribute="width" secondItem="kiv-Vg-h9z" secondAttribute="width" id="FiD-N8-u29"/>
+                            <constraint firstItem="Dmk-dE-0hX" firstAttribute="width" secondItem="WwR-JH-DGd" secondAttribute="width" multiplier="0.8" id="Nwt-1o-CGF"/>
+                            <constraint firstItem="Cde-nJ-EHb" firstAttribute="leading" secondItem="kiv-Vg-h9z" secondAttribute="leading" id="QQe-vP-uiZ"/>
+                            <constraint firstItem="Dmk-dE-0hX" firstAttribute="centerY" secondItem="WwR-JH-DGd" secondAttribute="centerY" id="R2d-gR-0wR"/>
+                            <constraint firstItem="kiv-Vg-h9z" firstAttribute="centerX" secondItem="kRI-qC-hpx" secondAttribute="centerX" id="UVU-e2-d5l"/>
+                            <constraint firstItem="Cde-nJ-EHb" firstAttribute="top" secondItem="kiv-Vg-h9z" secondAttribute="bottom" constant="32" id="UVq-sx-A7j"/>
+                            <constraint firstItem="Cde-nJ-EHb" firstAttribute="height" secondItem="kiv-Vg-h9z" secondAttribute="height" id="ajX-K3-XZT"/>
+                            <constraint firstItem="Dmk-dE-0hX" firstAttribute="height" secondItem="WwR-JH-DGd" secondAttribute="height" multiplier="0.7" id="bnW-hO-i3m"/>
+                            <constraint firstItem="kiv-Vg-h9z" firstAttribute="top" secondItem="kRI-qC-hpx" secondAttribute="bottom" constant="32" id="dnG-ro-lPC"/>
+                            <constraint firstItem="Dmk-dE-0hX" firstAttribute="centerX" secondItem="WwR-JH-DGd" secondAttribute="centerX" id="eDf-6T-nCi"/>
+                            <constraint firstItem="Oky-VE-2mO" firstAttribute="top" secondItem="Cde-nJ-EHb" secondAttribute="bottom" constant="64" id="f8T-HM-wvy"/>
+                            <constraint firstItem="kiv-Vg-h9z" firstAttribute="width" secondItem="Dmk-dE-0hX" secondAttribute="width" multiplier="0.8" id="scT-rM-3zV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9Hz-uJ-wWn"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ApP-7A-NEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-715" y="5"/>
+            <point key="canvasLocation" x="-716" y="4.9475262368815596"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="app_logo" width="30" height="30"/>
+    </resources>
 </document>

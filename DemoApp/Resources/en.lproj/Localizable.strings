@@ -1,0 +1,23 @@
+/*
+ Localizable.strings
+ MobiLock
+ 
+ Created by Sheshnath Kumar on 30/11/17.
+ Copyright © 2016 ProMobi Technologies. All rights reserved.
+ */
+
+//MARK:- COMMONS STRINGS
+"APP_NAME" = "Demo App";
+"BUTTON_DONE" = "DONE";
+"BUTTON_YES" = "Yes";
+"BUTTON_NO" = "No";
+"BUTTON_CONTINUE" = "Continue";
+"BUTTON_CANCEL" = "Cancel";
+"BUTTON_OK" = "Ok";
+"NO_INTERNET_CONNECTION" = "There is no internet connection.";
+"TITILE_HOME" = "Home";
+"TITILE_MESSAGE" = "Messages";
+"LABEL_ERROR" = "Error";
+"LABEL_SUCCESS" = "Success";
+
+

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
@@ -18,13 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //check if user is logged in
+        IQKeyboardManager.shared.enable = true//enable keyboard handling
         if UtilityMethods.shared.isUserLoggedIn() == false{
             //show onboarding screen
             if let loginViewController = UIStoryboard(name: "OnBoarding", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
                 appDelegate.window?.rootViewController = loginViewController
             }
-            
-            
         }
         return true
     }

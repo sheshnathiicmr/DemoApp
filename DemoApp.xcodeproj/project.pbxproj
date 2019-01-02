@@ -21,6 +21,10 @@
 		2B40974E21DC9FC500352D78 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40974D21DC9FC500352D78 /* UIColor.swift */; };
 		2B40975021DCA01200352D78 /* UtilityMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40974F21DCA01200352D78 /* UtilityMethods.swift */; };
 		2B40975321DCA1F100352D78 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B40975221DCA1F100352D78 /* OnBoarding.storyboard */; };
+		2B40975721DCBB9600352D78 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40975621DCBB9600352D78 /* ItemListViewController.swift */; };
+		2B40975A21DCBD3500352D78 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40975921DCBD3500352D78 /* UIView.swift */; };
+		2B40975D21DCC0FA00352D78 /* BrandingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B40975C21DCC0FA00352D78 /* BrandingButton.swift */; };
+		2B40976021DCC5E700352D78 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B40976221DCC5E700352D78 /* Localizable.strings */; };
 		4C1F4D5FE1D7BB16874B51D0 /* Pods_CommonPod_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +46,10 @@
 		2B40974D21DC9FC500352D78 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		2B40974F21DCA01200352D78 /* UtilityMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityMethods.swift; sourceTree = "<group>"; };
 		2B40975221DCA1F100352D78 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		2B40975621DCBB9600352D78 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
+		2B40975921DCBD3500352D78 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		2B40975C21DCC0FA00352D78 /* BrandingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandingButton.swift; sourceTree = "<group>"; };
+		2B40976121DCC5E700352D78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A7F523E7A21876C75465BC10 /* Pods-CommonPod-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB8E9BEDB154CFC8FB88AFFC /* Pods-CommonPod-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPod_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +89,7 @@
 		2B40972321DC96F100352D78 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B40975B21DCC0D100352D78 /* CustomControls */,
 				2B40973C21DC986E00352D78 /* Controller */,
 				2B40973B21DC986500352D78 /* Model */,
 				2B40973A21DC985900352D78 /* ViewModel */,
@@ -124,6 +133,7 @@
 			children = (
 				2B40974121DC9D1800352D78 /* BaseViewController.swift */,
 				2B40973F21DC9CCE00352D78 /* LoginViewController.swift */,
+				2B40975621DCBB9600352D78 /* ItemListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +141,7 @@
 		2B40973D21DC988F00352D78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2B40976221DCC5E700352D78 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -141,6 +152,7 @@
 				2B40974921DC9F1900352D78 /* UIButton.swift */,
 				2B40974B21DC9F7400352D78 /* String.swift */,
 				2B40974D21DC9FC500352D78 /* UIColor.swift */,
+				2B40975921DCBD3500352D78 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,6 +174,14 @@
 				2B40975221DCA1F100352D78 /* OnBoarding.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2B40975B21DCC0D100352D78 /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				2B40975C21DCC0FA00352D78 /* BrandingButton.swift */,
+			);
+			path = CustomControls;
 			sourceTree = "<group>";
 		};
 		42F3AF16DDCEC19B8357968C /* Frameworks */ = {
@@ -241,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B40976021DCC5E700352D78 /* Localizable.strings in Resources */,
 				2B40972F21DC96F300352D78 /* LaunchScreen.storyboard in Resources */,
 				2B40972C21DC96F300352D78 /* Assets.xcassets in Resources */,
 				2B40972A21DC96F100352D78 /* Main.storyboard in Resources */,
@@ -259,12 +280,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -302,6 +325,9 @@
 				2B40974621DC9E2300352D78 /* Constants.swift in Sources */,
 				2B40972521DC96F100352D78 /* AppDelegate.swift in Sources */,
 				2B40975021DCA01200352D78 /* UtilityMethods.swift in Sources */,
+				2B40975A21DCBD3500352D78 /* UIView.swift in Sources */,
+				2B40975721DCBB9600352D78 /* ItemListViewController.swift in Sources */,
+				2B40975D21DCC0FA00352D78 /* BrandingButton.swift in Sources */,
 				2B40974221DC9D1800352D78 /* BaseViewController.swift in Sources */,
 				2B40974E21DC9FC500352D78 /* UIColor.swift in Sources */,
 				2B40974A21DC9F1900352D78 /* UIButton.swift in Sources */,
@@ -328,6 +354,14 @@
 				2B40972E21DC96F300352D78 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2B40976221DCC5E700352D78 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B40976121DCC5E700352D78 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
