@@ -17,10 +17,69 @@
                     <view key="view" contentMode="scaleToFill" id="7Ue-5L-KIf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocb-s1-nHL">
+                                <rect key="frame" x="37.5" y="159.5" width="300" height="348"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-32-vPU">
+                                        <rect key="frame" x="114" y="32" width="72" height="60"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="oYc-ye-If5"/>
+                                            <constraint firstAttribute="width" secondItem="xO0-32-vPU" secondAttribute="height" multiplier="6:5" id="zwZ-0x-6L3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email-id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X7m-VK-Pba">
+                                        <rect key="frame" x="30" y="140" width="240" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oCy-Ia-mIo">
+                                        <rect key="frame" x="30" y="218" width="240" height="82"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="wjf-xR-f3m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="xO0-32-vPU" firstAttribute="centerX" secondItem="ocb-s1-nHL" secondAttribute="centerX" id="2Pp-8u-8JS"/>
+                                    <constraint firstItem="X7m-VK-Pba" firstAttribute="width" secondItem="ocb-s1-nHL" secondAttribute="width" multiplier="0.8" id="Fni-FK-yXx"/>
+                                    <constraint firstAttribute="height" constant="348" id="Okm-Sf-0fV"/>
+                                    <constraint firstItem="oCy-Ia-mIo" firstAttribute="trailing" secondItem="X7m-VK-Pba" secondAttribute="trailing" id="Pmf-x9-dVw"/>
+                                    <constraint firstItem="X7m-VK-Pba" firstAttribute="centerX" secondItem="ocb-s1-nHL" secondAttribute="centerX" id="Q6T-Vi-20R"/>
+                                    <constraint firstItem="X7m-VK-Pba" firstAttribute="top" secondItem="xO0-32-vPU" secondAttribute="bottom" constant="48" id="QMJ-kX-tCW"/>
+                                    <constraint firstItem="xO0-32-vPU" firstAttribute="top" secondItem="ocb-s1-nHL" secondAttribute="top" constant="32" id="YCo-mp-5hv"/>
+                                    <constraint firstItem="oCy-Ia-mIo" firstAttribute="top" secondItem="X7m-VK-Pba" secondAttribute="bottom" constant="48" id="svK-i0-43N"/>
+                                    <constraint firstItem="oCy-Ia-mIo" firstAttribute="leading" secondItem="X7m-VK-Pba" secondAttribute="leading" id="x2U-cD-QK7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ocb-s1-nHL" firstAttribute="centerX" secondItem="7Ue-5L-KIf" secondAttribute="centerX" id="1q2-IV-2YH"/>
+                            <constraint firstItem="ocb-s1-nHL" firstAttribute="width" secondItem="7Ue-5L-KIf" secondAttribute="width" multiplier="0.8" id="dde-fO-yQu"/>
+                            <constraint firstItem="ocb-s1-nHL" firstAttribute="centerY" secondItem="7Ue-5L-KIf" secondAttribute="centerY" id="fyw-2L-OyQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K1A-Kg-HJm"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="User" image="UserTabbarIcon" id="bta-a6-MTk"/>
+                    <connections>
+                        <outlet property="imageViewProfilePhoto" destination="xO0-32-vPU" id="gzv-A9-vLD"/>
+                        <outlet property="textFieldEmailId" destination="X7m-VK-Pba" id="6wq-hW-ZN5"/>
+                        <outlet property="textViewBio" destination="oCy-Ia-mIo" id="bwi-cd-PbZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPM-x2-Z5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,6 +123,7 @@
                 <tabBarController storyboardIdentifier="tabbarRootController" automaticallyAdjustsScrollViewInsets="NO" id="BTX-Li-efE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZoJ-ot-FOe">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -81,6 +141,7 @@
     <resources>
         <image name="ItemListTabbarIcon" width="22" height="22"/>
         <image name="StarTabbarIcon" width="22" height="22"/>
+        <image name="User" width="50" height="50"/>
         <image name="UserTabbarIcon" width="22" height="22"/>
     </resources>
 </document>
