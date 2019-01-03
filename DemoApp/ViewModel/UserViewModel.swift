@@ -10,7 +10,7 @@ import UIKit
 
 
 protocol UserViewModelDelegate {
-    func onUserDetailsRecieved(_ loginViewModel:UserViewModel,user:User)
+    func onUserDetailsRecieved(_ viewModel:UserViewModel,user:User)
 }
 
 

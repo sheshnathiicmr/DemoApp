@@ -9,8 +9,8 @@
 import UIKit
 
 protocol SignUpViewModelDelegate {
-    func onSignUpSuccess(_ loginViewModel:SignUpViewModel)
-    func onSignUpFailed(_ loginViewModel:SignUpViewModel, _ error:CustomError)
+    func onSignUpSuccess(_ viewModel:SignUpViewModel)
+    func onSignUpFailed(_ viewModel:SignUpViewModel, _ error:CustomError)
 }
 
 

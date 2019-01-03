@@ -12,6 +12,7 @@ class ItemListViewController: BaseViewController {
 
     // MARK: - Property
     var viewModel:ItemListViewModel!
+    var selectedItem:Item?
     @IBOutlet weak var tableViewItemList: UITableView!
     
     // MARK: - ViewLifeCycle
@@ -30,6 +31,15 @@ class ItemListViewController: BaseViewController {
 
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showItemDetails" {
+            if let destinationViewController = segue.destination as? ItemDetailsViewController {
+               destinationViewController.selectedItem = self.selectedItem
+            }
+        }
+    }
+    
 }
 
 extension ItemListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -38,7 +48,6 @@ extension ItemListViewController: UITableViewDelegate, UITableViewDataSource {
         return  viewModel.getNumberOfItems()
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let itemCell:ItemListTableViewCell = tableView.dequeueReusableCell(withIdentifier: "ItemListTableViewCell") as! ItemListTableViewCell
         if let item = self.viewModel.getItem(forIndexPath: indexPath) {
@@ -46,7 +55,16 @@ extension ItemListViewController: UITableViewDelegate, UITableViewDataSource {
         }
         itemCell.setColorPatter(withIndexPath: indexPath)
         itemCell.selectionStyle = .none
+        itemCell.buttonFavorite.tag = indexPath.row
+        itemCell.buttonFavorite.addTarget(self.viewModel, action:#selector(self.viewModel.favoriteButtonPressed), for: .touchUpInside)
         return itemCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let selectedItem = self.viewModel.getItem(forIndexPath: indexPath) {
+            self.selectedItem = selectedItem
+            self.performSegue(withIdentifier:"showItemDetails", sender: selectedItem)
+        }
     }
     
 }

@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 protocol ItemListViewModelDelegate {
-    func onItemsRecieved(_ loginViewModel:ItemListViewModel)
+    func onItemsRecieved(_ viewModel:ItemListViewModel)
 }
 
 
@@ -53,6 +53,21 @@ class ItemListViewModel: NSObject {
         return items[forIndexPath.row]
     }
     
+    @objc func favoriteButtonPressed(sender: StarButton!) {
+        if let selectedIndexItem = self.getItem(forIndexPath: IndexPath(row: sender.tag, section: 0)) {
+            let buttonToggleState = !selectedIndexItem.isItMarkedFavorite
+            sender.refreshButtonImage(value: buttonToggleState)
+            //save state change into DB
+            do{
+                let realm = try Realm()
+                realm.beginWrite()
+                selectedIndexItem.isItMarkedFavorite = buttonToggleState
+                try realm.commitWrite()
+            }catch{
+                print("error while updating star button state change")
+            }
+        }
+    }
     
     // MARK: - UtilityMethods
     private func parseAndSaveItems(withJSON:[String:Any]) -> Void {

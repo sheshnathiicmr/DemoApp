@@ -9,8 +9,8 @@
 import UIKit
 
 protocol LoginViewModelDelegate {
-    func onLoginSuccess(_ loginViewModel:LoginViewModel)
-    func onLoginFailed(_ loginViewModel:LoginViewModel, _ error:CustomError)
+    func onLoginSuccess(_ viewModel:LoginViewModel)
+    func onLoginFailed(_ viewModel:LoginViewModel, _ error:CustomError)
 }
 
 class LoginViewModel: NSObject {
