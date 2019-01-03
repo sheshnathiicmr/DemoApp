@@ -3,7 +3,7 @@
 //  DemoApp
 //
 //  Created by Sheshnath Kumar on 03/01/19.
-//  Copyright © 2019 ProMobi Technologies. All rights reserved.
+//  Copyright © 2019 Demo Technologies. All rights reserved.
 //
 
 import Foundation

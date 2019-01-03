@@ -3,7 +3,7 @@
 //  MobiLock
 //
 //  Created by Sheshnath Kumar on 08/11/17.
-//  Copyright © 2016 ProMobi Technologies. All rights reserved.
+//  Copyright © 2016 Demo Technologies. All rights reserved.
 //
 
 import UIKit
