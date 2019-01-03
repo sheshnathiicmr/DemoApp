@@ -47,6 +47,7 @@
 		2BE40C4B21DDBC7800C5EBC4 /* ItemDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE40C4A21DDBC7800C5EBC4 /* ItemDetailsViewModel.swift */; };
 		2BFC950621DDE01600FA4FD1 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC950521DDE01600FA4FD1 /* FavoriteViewModel.swift */; };
 		2BFC950821DDE35A00FA4FD1 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC950721DDE35A00FA4FD1 /* FavoriteTableViewCell.swift */; };
+		2BFC950A21DDEA5200FA4FD1 /* UserDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC950921DDEA5200FA4FD1 /* UserDetailsTableViewCell.swift */; };
 		4C1F4D5FE1D7BB16874B51D0 /* Pods_CommonPod_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		2BE40C4A21DDBC7800C5EBC4 /* ItemDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewModel.swift; sourceTree = "<group>"; };
 		2BFC950521DDE01600FA4FD1 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		2BFC950721DDE35A00FA4FD1 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		2BFC950921DDEA5200FA4FD1 /* UserDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		A7F523E7A21876C75465BC10 /* Pods-CommonPod-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB8E9BEDB154CFC8FB88AFFC /* Pods-CommonPod-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPod_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 			children = (
 				2B15DBB621DD1510009195EE /* ItemListTableViewCell.swift */,
 				2BFC950721DDE35A00FA4FD1 /* FavoriteTableViewCell.swift */,
+				2BFC950921DDEA5200FA4FD1 /* UserDetailsTableViewCell.swift */,
 			);
 			path = UITableViewCells;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B40974821DC9E9900352D78 /* SettingsUserPreference.swift in Sources */,
+				2BFC950A21DDEA5200FA4FD1 /* UserDetailsTableViewCell.swift in Sources */,
 				2B40976D21DCE8CE00352D78 /* SignUpViewModel.swift in Sources */,
 				2B40974621DC9E2300352D78 /* Constants.swift in Sources */,
 				2B40972521DC96F100352D78 /* AppDelegate.swift in Sources */,

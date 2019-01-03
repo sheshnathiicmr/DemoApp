@@ -12,7 +12,7 @@ A simple to demonstrate onboarding flow.
 ## Note
 -  Make sure 'Build  Active Architecture Only' is set  to NO for pods project.
 - Supported orientation is portrait only.
-- Red color buttons branding is used, even though it's considered destructive still i used it, to match with corporate branding of Deskera.
+- Red color buttons branding is used, even though it's considered destructive still i used it, to match with corporate branding.
 
 
 

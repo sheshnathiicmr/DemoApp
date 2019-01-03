@@ -33,7 +33,7 @@ class ItemDetailsViewModel: NSObject {
             self.selectedItem?.itemDescription = itemDescription ?? ""
             self.selectedItem?.updatedAt = updatedAt.toDate()
             try realm.commitWrite()
-            UtilityMethods.shared.showBanner(withMessage: "ALERT_ITEM_UPDATED".localized)
+           // UtilityMethods.shared.showBanner(withMessage: "ALERT_ITEM_UPDATED".localized)
             self.delegate?.onItemUpdated(self)
         }catch{
             print("error while updating item")
