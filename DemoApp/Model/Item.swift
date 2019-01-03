@@ -19,6 +19,7 @@ class Item : Object {
     public class func getAllItem() -> Results<Item>? {
         do{
             let realm = try Realm()
+            realm.refresh()
             return realm.objects(Item.self)
         }catch{
             print("error while getting items")

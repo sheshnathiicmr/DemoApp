@@ -18,11 +18,11 @@ class ItemListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = ItemListViewModel(delegate: self)
+        self.viewModel.refreshItems()
         self.setInitalAppearance()
     }
     
     func setInitalAppearance() -> Void {
-        self.viewModel.refreshItems()
         self.title = "TITLE_ITEMS_SCREEN".localized
         self.tableViewItemList.rowHeight = UITableView.automaticDimension
         self.tableViewItemList.estimatedRowHeight = 60

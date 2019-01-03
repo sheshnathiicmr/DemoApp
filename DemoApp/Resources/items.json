@@ -2,9 +2,15 @@
 {
     "items":[
     
-    {"title":"item1", "description":"product description","imageName":"image1","updatedAt":"2-jan-2019","isItFavorite":false},
+    {"title":"Taare Zameen Par", "description":"Ishaan cannot seem to get anything right at his boarding school. Fortunately, a new unconventional art teacher helps him realise he has dyslexia and uncover his hidden potential.","imageName":"image1","updatedAt":"02-01-2019","isItFavorite":false},
     
-    {"title":"item2", "description":"product description","imageName":"image2","updatedAt":"1-feb-2019","isItFavorite":true}
+    {"title":"2.0", "description":"Scientists help the government investigate a threat that is beyond understanding.","imageName":"image2","updatedAt":"01-02-2019","isItFavorite":true},
+    
+    {"title":"Dilwale Dulhania Le Jayenge", "description":"Raj and Simran meet during a trip across Europe and the two fall in love. However, when Raj learns that Simran is already promised to another, he follows her to India to win her and her father over.","imageName":"image3","updatedAt":"01-03-2019","isItFavorite":true}
+    
+    
+    
+
     
     ]
 

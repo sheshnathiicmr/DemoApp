@@ -34,7 +34,7 @@ class ItemListTableViewCell: UITableViewCell {
                     self.imageViewItem.image = UIImage(named: "AppLogo")
                 }
                 //set item title and description
-                self.setTitle(withTitle: item.title, description: item.description)
+                self.setTitle(withTitle: item.title, description: item.itemDescription)
                 //set favorite image/state
                 self.buttonFavorite.refreshButtonImage(value: item.isItMarkedFavorite)
             }
@@ -59,7 +59,23 @@ class ItemListTableViewCell: UITableViewCell {
     
     //MARK: - UtilityMethods
     private func setTitle(withTitle:String, description:String) -> Void {
+        let attributedCombinedString = NSMutableAttributedString()
         
+        //set title
+        let attributesHeaderLabel: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .bold), NSAttributedString.Key.foregroundColor: UIColor.black as Any]
+        attributedCombinedString.append(NSAttributedString(string: (withTitle)))
+        attributedCombinedString.addAttributes(attributesHeaderLabel, range: NSRange.init(location: 0, length: withTitle.count))
+        
+        
+        //set description
+        let attributesDescriptionLabel: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .medium), NSAttributedString.Key.foregroundColor: UIColor.darkGray as Any]
+        let descriptionStringToAdd = "\n\(description)"
+        let attributedDescriptionToAdd = NSMutableAttributedString(string: descriptionStringToAdd)
+        attributedCombinedString.append(attributedDescriptionToAdd)
+        attributedCombinedString.addAttributes(attributesDescriptionLabel, range: NSRange.init(location: withTitle.count, length:description.count))
+        
+        //set attributed string on cell's label
+        self.labelItemTitleDescription.attributedText = attributedCombinedString
     }
     
 }

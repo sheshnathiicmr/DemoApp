@@ -102,7 +102,7 @@ class ItemListViewModel: NSObject {
     }
     
     private func getImageData(withImageName:String) -> Data? {
-        let itemImage = UIImage(named: withImageName)
+        let itemImage = UIImage(named: "\(withImageName).jpg")
         return itemImage?.pngData()
     }
     
