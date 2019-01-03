@@ -23,12 +23,16 @@ class ItemListViewController: BaseViewController {
         self.setInitalAppearance()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableViewItemList.reloadData()
+    }
+    
     func setInitalAppearance() -> Void {
         self.title = "TITLE_ITEMS_SCREEN".localized
         self.tableViewItemList.rowHeight = UITableView.automaticDimension
         self.tableViewItemList.estimatedRowHeight = 60
         self.tableViewItemList.tableFooterView = UIView()
-
     }
     
     // MARK: - Navigation

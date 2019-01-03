@@ -28,6 +28,14 @@ class ItemDetailsViewController: UIViewController {
         self.setInitalAppearance()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if self.isMovingFromParent {
+            self.viewModel.updateItem(withTitle: self.textFieldTitle.text, itemDescription: self.textViewDescription.text, updatedAt: self.textFieldUpdatedAt.text ?? "01-01-1970")
+        }
+    }
+
+    
     func setInitalAppearance() -> Void {
         self.title = selectedItem?.title
         if let imageData = self.selectedItem?.itemPhoto {
@@ -36,8 +44,20 @@ class ItemDetailsViewController: UIViewController {
         self.textFieldTitle.text = self.selectedItem?.title
         self.textViewDescription.text = self.selectedItem?.itemDescription
         self.textFieldUpdatedAt.text = self.selectedItem?.updatedAt?.toString()
-        
+        //set input type date picker for updated at textfield
+        let datePickerView = UIDatePicker()
+        datePickerView.datePickerMode = .date
+        self.textFieldUpdatedAt.inputView = datePickerView
+        datePickerView.addTarget(self, action:#selector(self.handleDatePicker), for: .valueChanged)
     }
+    
+    // MARK: - UtilityMethods
+    @objc func handleDatePicker(sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        self.textFieldUpdatedAt.text = dateFormatter.string(from: sender.date)
+    }
+    
 }
 
 extension ItemDetailsViewController: ItemDetailsViewModelDelegate {

@@ -25,4 +25,16 @@ class ItemDetailsViewModel: NSObject {
         self.selectedItem = selectedItem
     }
     
+    public func updateItem(withTitle:String?, itemDescription:String?,updatedAt:String)-> Void {
+        do{
+            let realm = try Realm()
+            realm.beginWrite()
+            self.selectedItem?.title = withTitle ?? ""
+            self.selectedItem?.itemDescription = itemDescription ?? ""
+            self.selectedItem?.updatedAt = updatedAt.toDate()
+            try realm.commitWrite()
+        }catch{
+            print("error while updating item")
+        }
+    }
 }

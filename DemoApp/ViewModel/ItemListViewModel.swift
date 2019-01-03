@@ -87,7 +87,7 @@ class ItemListViewModel: NSObject {
                         newItem.itemPhoto = self.getImageData(withImageName: imageName)
                     }
                     if let itemUpdatedAt = item["updatedAt"] as? String {
-                        newItem.updatedAt = self.getDate(withStringDate: itemUpdatedAt)
+                        newItem.updatedAt = itemUpdatedAt.toDate()
                     }
                     if let isItFavorite = item["isItFavorite"] as? Bool {
                         newItem.isItMarkedFavorite = isItFavorite
@@ -105,16 +105,7 @@ class ItemListViewModel: NSObject {
         }
     }
     
-    private func getDate(withStringDate:String) -> Date? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-mm-yyyy" //Your date format
-        dateFormatter.timeZone = TimeZone(abbreviation: "GMT+0:00") //Current time zone
-        //according to date format your date string
-        guard let date = dateFormatter.date(from: withStringDate) else {
-            return nil
-        }
-        return(date)
-    }
+    
     
     private func getImageData(withImageName:String) -> Data? {
         let itemImage = UIImage(named: "\(withImageName).jpg")

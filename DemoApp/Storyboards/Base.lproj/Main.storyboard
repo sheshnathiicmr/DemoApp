@@ -65,12 +65,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKl-CH-NLD">
+                                <rect key="frame" x="74.5" y="73" width="171.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ocb-s1-nHL" firstAttribute="centerX" secondItem="7Ue-5L-KIf" secondAttribute="centerX" id="1q2-IV-2YH"/>
+                            <constraint firstItem="ocb-s1-nHL" firstAttribute="top" secondItem="qKl-CH-NLD" secondAttribute="bottom" constant="8" id="5KM-Sg-aMg"/>
                             <constraint firstItem="ocb-s1-nHL" firstAttribute="width" secondItem="7Ue-5L-KIf" secondAttribute="width" multiplier="0.8" id="dde-fO-yQu"/>
                             <constraint firstItem="ocb-s1-nHL" firstAttribute="centerY" secondItem="7Ue-5L-KIf" secondAttribute="centerY" id="fyw-2L-OyQ"/>
+                            <constraint firstItem="qKl-CH-NLD" firstAttribute="centerX" secondItem="7Ue-5L-KIf" secondAttribute="centerX" id="zbX-UP-Vj2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K1A-Kg-HJm"/>
                     </view>
@@ -121,13 +129,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label Label " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqw-zj-zf9">
-                                                    <rect key="frame" x="64" y="36" width="230" height="41"/>
+                                                    <rect key="frame" x="64" y="36" width="184" height="61"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Sf4-EM-aCM">
-                                                    <rect key="frame" x="8" y="32.5" width="48" height="48"/>
+                                                    <rect key="frame" x="8" y="42.5" width="48" height="48"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="48" id="Iza-8M-Whz"/>
                                                         <constraint firstAttribute="width" secondItem="Sf4-EM-aCM" secondAttribute="height" multiplier="1:1" id="plS-7I-byl"/>
@@ -140,7 +148,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-Ih-Jff" customClass="StarButton" customModule="DemoApp" customModuleProvider="target">
-                                                    <rect key="frame" x="321" y="45" width="46" height="48"/>
+                                                    <rect key="frame" x="266" y="45" width="46" height="48"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="48" id="2zK-Dj-Str"/>
                                                         <constraint firstAttribute="width" secondItem="bzd-Ih-Jff" secondAttribute="height" multiplier="23:24" id="DLv-Bk-XyZ"/>
@@ -154,7 +162,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated On:1-jan-2019" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJO-sE-4G7">
-                                                    <rect key="frame" x="207" y="4" width="160" height="18"/>
+                                                    <rect key="frame" x="152" y="4" width="160" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                     <color key="textColor" white="0.20279947916666666" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>

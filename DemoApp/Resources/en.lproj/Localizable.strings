@@ -31,3 +31,5 @@
 "ALERT_MESSAGE_WRONG_CREDENTIALS" = "Email-id or password don't matched with our records";
 "TITLE_ITEMS_SCREEN" = "Items";
 "UPDATED_ON" = "Updated On: %@";
+"ALERT_ITEM_UPDATED" = "Item updated";
+
