@@ -22,8 +22,12 @@ class UserViewController: UIViewController {
         super.viewDidLoad()
         self.viewModel = UserViewModel(delegate: self)
         self.viewModel.getLoggedInUserDetails()
+        self.setInitalAppearance()
     }
     
+    func setInitalAppearance() -> Void {
+        self.imageViewProfilePhoto.makeCircularImage()
+    }
 }
 
 extension UserViewController: UserViewModelDelegate {

@@ -23,6 +23,11 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = SignUpViewModel(delegate: self)
+        self.setInitalAppearance()
+    }
+    
+    func setInitalAppearance() -> Void {
+        self.imageViewProfilePhoto.makeCircularImage()
     }
     
     // MARK: - ActionMethods

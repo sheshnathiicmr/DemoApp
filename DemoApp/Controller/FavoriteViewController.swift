@@ -79,7 +79,7 @@ extension FavoriteViewController: UITableViewDelegate,UITableViewDataSource {
     }
     //MARK: - HeaderView
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 150
+        return 180
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

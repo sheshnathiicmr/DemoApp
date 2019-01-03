@@ -27,6 +27,12 @@
                                             <constraint firstAttribute="width" constant="48" id="9WB-hb-6eI"/>
                                             <constraint firstAttribute="width" secondItem="kRI-qC-hpx" secondAttribute="height" multiplier="72:73" id="qvR-iJ-Kfa"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email-id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kiv-Vg-h9z">
                                         <rect key="frame" x="30" y="112.5" width="240" height="30"/>
@@ -122,6 +128,12 @@
                                             <constraint firstAttribute="width" constant="60" id="BcE-Bt-J4C"/>
                                             <constraint firstAttribute="width" secondItem="WfZ-Mh-L6y" secondAttribute="height" multiplier="72:73" id="aMJ-FA-gkC"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="1b7-Cq-afV" appends="YES" id="6Qg-4d-sYL"/>
                                         </connections>

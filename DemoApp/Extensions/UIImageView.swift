@@ -12,6 +12,10 @@ import UIKit
 extension UIImageView {
     
     func makeCircularImage() -> Void {
-        
+        self.layer.borderWidth = 0.5
+        self.layer.masksToBounds = false
+        self.layer.borderColor = UIColor.clear.cgColor
+        self.layer.cornerRadius = self.frame.height/2
+        self.clipsToBounds = true
     }
 }
