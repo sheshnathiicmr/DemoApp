@@ -30,6 +30,7 @@
 "ALERT_MESSAGE_SIGNUP_FAILED" = "Account couldn't be created, please try again";
 "ALERT_MESSAGE_WRONG_CREDENTIALS" = "Email-id or password don't matched with our records";
 "TITLE_ITEMS_SCREEN" = "Items";
+"TITLE_FAVORITE_SCREEN" = "Favorites";
 "UPDATED_ON" = "Updated On: %@";
 "ALERT_ITEM_UPDATED" = "Item updated";
 

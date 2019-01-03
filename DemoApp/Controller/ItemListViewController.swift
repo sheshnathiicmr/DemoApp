@@ -57,7 +57,7 @@ extension ItemListViewController: UITableViewDelegate, UITableViewDataSource {
         if let item = self.viewModel.getItem(forIndexPath: indexPath) {
             itemCell.item = item
         }
-        itemCell.setColorPatter(withIndexPath: indexPath)
+        itemCell.setColorPattern(withIndexPath: indexPath)
         itemCell.selectionStyle = .none
         itemCell.buttonFavorite.tag = indexPath.row
         itemCell.buttonFavorite.addTarget(self.viewModel, action:#selector(self.viewModel.favoriteButtonPressed), for: .touchUpInside)

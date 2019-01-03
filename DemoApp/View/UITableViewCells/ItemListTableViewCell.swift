@@ -49,7 +49,7 @@ class ItemListTableViewCell: UITableViewCell {
     }
 
     
-    func setColorPatter(withIndexPath:IndexPath) -> Void {
+    func setColorPattern(withIndexPath:IndexPath) -> Void {
         if withIndexPath.row % 2 == 0 {
             self.backgroundColor = UIColor.EvenCellBackgroundColor
         }else{

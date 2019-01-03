@@ -45,6 +45,8 @@
 		2BE40C4721DDB5B200C5EBC4 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BE40C4421DDB5B200C5EBC4 /* image3.jpg */; };
 		2BE40C4921DDBC3600C5EBC4 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE40C4821DDBC3600C5EBC4 /* ItemDetailsViewController.swift */; };
 		2BE40C4B21DDBC7800C5EBC4 /* ItemDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE40C4A21DDBC7800C5EBC4 /* ItemDetailsViewModel.swift */; };
+		2BFC950621DDE01600FA4FD1 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC950521DDE01600FA4FD1 /* FavoriteViewModel.swift */; };
+		2BFC950821DDE35A00FA4FD1 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC950721DDE35A00FA4FD1 /* FavoriteTableViewCell.swift */; };
 		4C1F4D5FE1D7BB16874B51D0 /* Pods_CommonPod_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,8 @@
 		2BE40C4421DDB5B200C5EBC4 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
 		2BE40C4821DDBC3600C5EBC4 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
 		2BE40C4A21DDBC7800C5EBC4 /* ItemDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewModel.swift; sourceTree = "<group>"; };
+		2BFC950521DDE01600FA4FD1 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		2BFC950721DDE35A00FA4FD1 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		A7F523E7A21876C75465BC10 /* Pods-CommonPod-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB8E9BEDB154CFC8FB88AFFC /* Pods-CommonPod-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonPod-DemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommonPod-DemoApp/Pods-CommonPod-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC03C2EC308F9E451CFDE0E8 /* Pods_CommonPod_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonPod_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				2B15DBB621DD1510009195EE /* ItemListTableViewCell.swift */,
+				2BFC950721DDE35A00FA4FD1 /* FavoriteTableViewCell.swift */,
 			);
 			path = UITableViewCells;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				2B15DBAE21DD0B3D009195EE /* UserViewModel.swift */,
 				2B15DBB221DD13C3009195EE /* ItemListViewModel.swift */,
 				2BE40C4A21DDBC7800C5EBC4 /* ItemDetailsViewModel.swift */,
+				2BFC950521DDE01600FA4FD1 /* FavoriteViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -423,10 +429,12 @@
 				2B40976721DCCE8900352D78 /* CustomError.swift in Sources */,
 				2B40975D21DCC0FA00352D78 /* BrandingButton.swift in Sources */,
 				2B40974221DC9D1800352D78 /* BaseViewController.swift in Sources */,
+				2BFC950821DDE35A00FA4FD1 /* FavoriteTableViewCell.swift in Sources */,
 				2B15DBBE21DD288F009195EE /* StarButton.swift in Sources */,
 				2B40976B21DCD9ED00352D78 /* SignUpViewController.swift in Sources */,
 				2B40974E21DC9FC500352D78 /* UIColor.swift in Sources */,
 				2B15DBB321DD13C3009195EE /* ItemListViewModel.swift in Sources */,
+				2BFC950621DDE01600FA4FD1 /* FavoriteViewModel.swift in Sources */,
 				2B40974A21DC9F1900352D78 /* UIButton.swift in Sources */,
 				2B40977321DCF7CC00352D78 /* FavoriteViewController.swift in Sources */,
 				2B40976F21DCE98600352D78 /* User.swift in Sources */,

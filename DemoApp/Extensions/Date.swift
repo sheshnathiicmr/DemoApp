@@ -12,7 +12,7 @@ import UIKit
 extension Date {
     func toString() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-mm-yyyy" //Your date format
+        dateFormatter.dateFormat = "dd-MM-yyyy" //Your date format
         dateFormatter.timeZone = TimeZone(abbreviation: "GMT+0:00") //Current time zone
         return dateFormatter.string(from: self)
     }
