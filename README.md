@@ -1,7 +1,5 @@
 # DemoApp-iOS
-A simple to demonstrate onboarding flow. 
-
-
+A Sample app to demonstrate architecture and coding standards. 
 
 ## Requirements
 1. Xcode 10.0 or newer
@@ -10,9 +8,9 @@ A simple to demonstrate onboarding flow.
 4. Swift 4.2
 
 ## Note
--  Make sure 'Build  Active Architecture Only' is set  to NO for pods project.
-- Supported orientation is portrait only.
-- Red color buttons branding is used, even though it's considered destructive still i used it, to match with corporate branding.
+1. Make sure 'Build  Active Architecture Only' is set  to NO for pods project.
+2. Supported orientation is portrait only.
+3. Red color buttons branding is used, even though it's considered destructive still i used it, to match with corporate branding.
 
 
 
