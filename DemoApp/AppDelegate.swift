@@ -8,6 +8,8 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import UserNotifications
+
 
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
@@ -23,9 +25,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //show onboarding screen
            self.showLoginScreen()
         }
+        self.registerForPushNotifications()
         return true
     }
 
+    func registerForPushNotifications() {
+        if #available(iOS 10.0, *) {
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization( options: authOptions,completionHandler: {_, _ in
+                print("status changed")
+                
+            })
+            // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = self
+        } else {
+            let settings: UIUserNotificationSettings =
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            UIApplication.shared.registerUserNotificationSettings(settings)
+        }
+        UIApplication.shared.registerForRemoteNotifications()
+        
+        
+        //notification category with actions
+        if #available(iOS 10.0, *) {
+            let remindLaterAction = UNNotificationAction(identifier: "remindLater", title: "Remind me later", options: UNNotificationActionOptions(rawValue: 0))
+            let acceptAction = UNNotificationAction(identifier: "accept", title: "Accept", options: .foreground)
+            let declineAction = UNNotificationAction(identifier: "decline", title: "Decline", options: .destructive)
+            let commentAction = UNTextInputNotificationAction(identifier: "comment", title: "Comment", options: .authenticationRequired, textInputButtonTitle: "Send", textInputPlaceholder: "Share your thoughts..")
+            
+            //Category
+            let invitationCategory = UNNotificationCategory(identifier: "rich-apns", actions: [remindLaterAction, acceptAction, declineAction, commentAction], intentIdentifiers: [], options: UNNotificationCategoryOptions(rawValue: 0))
+            //Register the app’s notification types and the custom actions that they support.
+            UNUserNotificationCenter.current().setNotificationCategories([invitationCategory])
+            
+        } else {
+            // Fallback on earlier versions
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -58,3 +101,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate:UNUserNotificationCenterDelegate{
+
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let tokenParts = deviceToken.map { data -> String in
+            return String(format: "%02.2hhx", data)
+        }
+        let token = tokenParts.joined()
+        // 2. Print device token to use for PNs payloads
+        print("Device Token: \(token)")
+    }
+    
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        print("message is: \(userInfo)")
+    }
+    
+    
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        switch response.notification.request.content.categoryIdentifier
+        {
+        case "rich-apns":
+            switch response.actionIdentifier
+            {
+            case "remindLater":
+                print("remindLater")
+                
+            case "accept":
+                print("accept")
+                
+            default:
+                break
+            }
+            
+        default:
+            break
+        }
+        completionHandler()
+    }
+    
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        // 1. Print out error if PNs registration not successful
+        print("Failed to register for remote notifications with error: \(error)")
+    }
+}

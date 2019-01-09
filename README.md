@@ -10,7 +10,6 @@ A Sample app to demonstrate architecture and coding standards.
 ## Note
 1. Make sure 'Build  Active Architecture Only' is set  to NO for pods project.
 2. Supported orientation is portrait only.
-3. Red color buttons branding is used, even though it's considered destructive still i used it, to match with corporate branding.
 
 
 
